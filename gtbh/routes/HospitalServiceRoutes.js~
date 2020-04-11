@@ -2,9 +2,6 @@ var express = require('express');
 var router = express.Router();
 var HospitalServiceController = require('../controllers/HospitalServiceController.js');
 
-var bodyParser = require('body-parser'); 
-router.use(bodyParser.json()); 
-router.use(bodyParser.urlencoded({ extended: true }));
 /*
  * GET
  */
