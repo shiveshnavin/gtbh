@@ -23,7 +23,7 @@
     "express-session": "^1.16.2",
     "fcm-node": "^1.5.1",
     "mongodb-backup": "^1.6.9",
-    "mongoose": "^5.4.16",
+    "mongoose": "^5.7.5",
     "multer": "^1.4.1",
     "node-paytmpg": "^1.2.1",
     "nodemailer": "^6.4.5",
