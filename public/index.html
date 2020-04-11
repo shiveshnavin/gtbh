@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bgimg {
+    background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+
+  .bottomleft {
+    background: #26A69A44;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 30px;
+    padding-top: 16px;
+    width: 100%;
+  }
+
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+
+  .form-group {
+    padding-left: 16px;
+    display: inline;
+  }
+
+  .tooltip { 
+    border-bottom: 1px dotted black;
+  }
+
+  .tooltip2 .tooltiptext {
+    visibility: hidden;
+    width: 50%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px ;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -25%;
+    opacity: 0;
+    font-size: small;
+    transition: opacity 0.3s;
+  }
+
+  .tooltip2 .tooltiptext::after {
+    content: ""; 
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+  .tooltip2:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
+
+<head>
+  <title>
+    uDocto
+  </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="bgimg">
+    <div class="topleft">
+      <p>uDocto</p>
+    </div>
+    <div class="middle">
+      <h1>Welcome</h1>
+      <hr>
+      <p>uDocto : Connect to your Care</p>
+    </div>
+    <div align="center" class="bottomleft"> 
+      <div   style="padding-left: 16px;padding-bottom: 16px;" class="tooltip2" >Subscribe <img width="25px" height="25px" src="https://www.iconsdb.com/icons/preview/white/info-xxl.png">
+        <span class="tooltiptext">By subscribing to our portal you will get a unique key for your organization/personal practice . Your patients can use this key to connect with you and use uDocto app managed by you . You will recieve a mail upon completion of subscription .<div class=""></div></span>
+      </div>
+      <form class="form-inline" method="POST" action="/pgt/init">
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" hint="Email" class="form-control" name="EMAIL">
+        </div>
+        <div class="form-group">
+          <label for="phone">Mobile:</label>
+          <input type="text" hint="Phone" class="form-control" name="MOBILE_NO">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Your Name:</label>
+          <input type="text" hint="Name" class="form-control" name="NAME">
+        </div>
+        <input  hint="Name" class="form-control" name="PRODUCT_NAME" value="uDocto Subscription" type="hidden">
+        <input hint="Name" class="form-control" name="TXN_AMOUNT" value="3999" type="hidden">
+        <button type="submit" class="btn btn-success btn-lg">Subscribe</button>
+        
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

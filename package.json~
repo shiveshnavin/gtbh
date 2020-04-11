@@ -1,0 +1,46 @@
+{
+  "name": "gtbh",
+  "version": "1.1.7",
+  "description": "GTBH Connect",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiveshnavin/node_paytm.git"
+  },
+  "keywords": [
+    "nodejs",
+    "paytm",
+    "payment",
+    "gateway",
+    "paytm",
+    "api",
+    "paytm",
+    "nodejs"
+  ],
+  "author": "Shivesh Navin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shiveshnavin/node_paytm/issues"
+  },
+  "homepage": "https://github.com/shiveshnavin/node_paytm#readme",
+  "dependencies": {
+    "@google-cloud/storage": "^2.5.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "crypto": "^1.0.1",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.5",
+    "express-handlebars": "^3.0.2",
+    "express-session": "^1.16.2",
+    "fcm-node": "^1.5.1",
+    "mongoose": "^5.4.16",
+    "multer": "^1.4.1",
+    "random-username-generator": "^1.0.4",
+    "request": "^2.88.0",
+    "util": "^0.11.1"
+  }
+}
